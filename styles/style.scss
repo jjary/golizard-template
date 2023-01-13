@@ -1,0 +1,62 @@
+@import "variables";
+
+// start scrollbar styling
+body::-webkit-scrollbar {
+    width: 1rem;
+    background-color: $scrollbar-color;
+  }
+
+body::-webkit-scrollbar:hover {
+    background-color: $scrollbar-color-hover;
+  }
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+body::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+  }
+// end scrollbar styling
+
+// Text styling start
+html, body {
+  font-family: 'Open sans', sans-serif !important;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  h2 {
+    font-size: $size-primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+  h3 {
+    font-size: $size-secondary;
+  }
+  p {
+    font-size: $size-tertiary;
+  }
+  hr {
+    color: $secondary-color;
+    width: 15rem;
+    border: 2px solid $secondary-color;
+    opacity: 1;
+    margin: 1rem auto;
+  }
+}
+
+@include go-breakpoint-down(lg){
+  html, body {
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+// Text styling end

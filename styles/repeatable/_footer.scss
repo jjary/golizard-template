@@ -1,0 +1,159 @@
+.footer {
+    background-color: $main-color;
+    min-height: 25vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: $text-color-contr;
+    padding: $margin-xxl;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include go-breakpoint-down(lg){
+        padding: $margin-lg;
+    }
+    &--wrapper {
+        align-items: start;
+        padding-top: 2%;
+    }
+    // Site logo in footer styling start
+    &--logo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+            img {
+                max-width: 100%;
+                height: auto;
+                @include go-breakpoint-down(lg){
+                    max-width: 70%;
+                    height: auto;
+                }
+                @include go-breakpoint-down(lg){
+                    max-width: 30%;
+                    height: auto;
+                }
+            }
+    }
+    // Site logo in footer styling end
+    &--item {
+        text-align: center;
+        @include go-breakpoint-down(lg){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        &__links {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+            a {
+                text-decoration: none;
+                color: $text-color-contr;
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+        h4 {
+            font-size: 1.6rem !important;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            @include go-breakpoint-down(lg){
+                font-size: 1.2rem !important;
+            }
+        }
+        p {
+            font-size: 1.6rem !important;
+            font-weight: 300;
+            @include go-breakpoint-down(lg){
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+    &--socials {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        font-size: 1.5rem;
+        @include go-breakpoint-down(lg){
+            justify-content: center;
+        }
+        a {
+            text-decoration: none;
+            min-width: 3rem;
+            min-height: 3rem;
+            border: 1px solid $text-color-contr;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: $text-color-contr;
+            }            
+        }
+        a:hover {            
+            border: 1px solid $secondary-color;
+            border-radius: 50%;
+            i {
+                color: $secondary-color;
+            }
+        }
+        a:first-child {
+            margin-right: 1rem;
+        }
+    }
+    &--divider {
+        width: 100%;
+        border: 1px solid $text-color-contr;
+        background-color: $text-color-contr;
+    }
+    &--copy {
+        p {
+            font-size: 1.6rem !important;
+            @include go-breakpoint-down(lg){
+                font-size: 1.2rem !important;
+            }
+        }
+        
+        &__left {
+            text-align: start;
+        }
+        &__right {
+            text-align: end;
+            a {
+                text-decoration: none;
+                color: $text-color-contr;
+                &:hover {
+                    color: $secondary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.scroll-to-top {
+position: relative;
+}
+
+.scrl-btn-position {
+position: fixed;
+bottom: 1rem;
+right: 1rem;
+z-index: 99;
+}
+
+.scrl-btn-style {
+border: 0;
+border-radius: 50%;
+height: 4rem;
+width: 4rem;
+color: $primary-color;
+cursor: pointer;
+font-size: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: hidden;
+}

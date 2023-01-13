@@ -1,0 +1,11 @@
+.hero{
+    min-height: 100vh;
+    padding: $margin-xxl;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    @include go-breakpoint-down(lg){
+        padding: $margin-lg;
+    }
+}

@@ -1,0 +1,26 @@
+@import 'variables';
+
+// Golizard Grid import
+@import './gogrid/goVariables';
+@import './gogrid/goBreakpoints';
+@import './gogrid/goGrid';
+
+@import 'style';
+
+@import "slick-carousel/slick/slick";
+
+
+// Repeatables import
+@import './repeatable/buttons';
+@import './repeatable/footer';
+@import './repeatable/header';
+
+// Main page styles import
+@import './main-page/hero';
+
+// Subpages styles import
+@import './subpages/subheader';
+@import './subpages/not-found.scss';
+
+
+

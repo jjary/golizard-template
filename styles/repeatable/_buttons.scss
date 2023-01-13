@@ -1,0 +1,27 @@
+.main-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: $text-color-contr;
+    background-color: $main-color;
+    padding: 2rem 4rem;
+    border-radius: 5px;
+}
+.main-button:hover{
+    background-color: $primary-color;
+    color: $text-color-contr;
+}
+.outline-button {
+    color: $text-color;
+    padding: 1rem 6rem;
+    text-decoration: none;
+    font-size: 2rem;
+    border: 1px solid $text-color;
+}
+.outline-button:hover{
+    background-color: $main-color;
+    color: $secondary-color;
+    border: 1px solid $main-color;
+}
